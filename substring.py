@@ -46,16 +46,29 @@ print(substrings)
 
 #Java Code
 
-# A=[10,20,30]					#target=30;
-# for(int s=0;s<n;s++){   			#FOR(INT S=0;S<N;S++)
-#   for(int e=s;e<n;e++){					#PRNT A[S] - 10, 20, 30. 
-#      int sum=0;
-#      Arraylist al;     
-#      for(int i=s;i<=e;i++){
-# 	sum=sum + A[i];
-# 	al.add(A[i]);
-# 	if(sum==target)
-# 	  print(al);				#subArray 10,20
+# import java.util.ArrayList;
+
+# public class Main {
+#     public static void main(String[] args) {
+#         int[] A = {10, 20, 30}; // target = 30
+#         int n = A.length;
+
+#         for (int s = 0; s < n; s++) {
+#             for (int e = s; e < n; e++) {
+#                 int sum = 0;
+#                 ArrayList<Integer> al = new ArrayList<>();
+#                 for (int i = s; i <= e; i++) {
+#                     sum += A[i];
+#                     al.add(A[i]);
+#                     if (sum == 30) {
+#                         System.out.println(al);
+#                     }
+#                 }
+#             }
+#         }
+#     }
+# }
+			#subArray 10,20
 # 						#subArray 30
 
 # when s=0

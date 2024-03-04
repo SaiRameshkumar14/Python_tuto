@@ -29,3 +29,19 @@ elif(get%5 == 0):
     print("Value divisible by 5, not divisible by 3")
 else:
     print("Value not divisible by both 3 or 5")
+
+################################
+
+score= int(input("Enter score : "))
+
+if (score<35):
+    print("Poor Student")
+
+if(score > 35 and score < 70):
+    print("Average Student")
+
+if (score > 70 and score < 90):
+    print("Good Student")
+
+else:
+    print("Perfect Student")

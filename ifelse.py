@@ -44,6 +44,21 @@ score= int(input("Enter score : "))
 if (score<35):
     print("Poor Student")
 
+if(score > 35 and score < 70):
+    print("Average Student")
+
+if (score > 70 and score < 90):
+    print("Good Student")
+
+else:
+    print("Perfect Student")
+
+
+score= int(input("Enter score : "))
+
+if (score<35):
+    print("Poor Student")
+
 elif(score > 35 and score < 70):
     print("Average Student")
 

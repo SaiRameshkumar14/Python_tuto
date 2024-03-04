@@ -5,6 +5,15 @@ else:
 
 ################################################################
     
+num = int(input("Enter value : "))
+
+if (num%2 == 0):
+    print("Even")
+else:
+    print("Odd")
+
+################################################################
+    
 mark = int(input("Enter mark : "))
 
 if (mark>35):
@@ -27,3 +36,19 @@ elif (get == "b"):
     print("You Love Sana")
 else:
     ("Invalid input")
+
+################################################################
+    
+score= int(input("Enter score : "))
+
+if (score<35):
+    print("Poor Student")
+
+elif(score > 35 and score < 70):
+    print("Average Student")
+
+elif (score > 70 and score < 90):
+    print("Good Student")
+
+else:
+    print("Perfect Student")

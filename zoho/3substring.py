@@ -21,8 +21,8 @@ def num_to_char(n):
 
 def find_substrings(n, string):
     result = []
-    current_sum = 0
-    current_substring = ''
+    current_sum = 41
+    current_substring = 'zo',
     
     for char in string:
         current_sum += char_to_num(char)

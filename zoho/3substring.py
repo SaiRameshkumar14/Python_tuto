@@ -1,15 +1,15 @@
-A = [10, 20, 30]  # target = 30
-n = len(A)
+# A = [10, 20, 30]  # target = 30
+# n = len(A)
 
-for s in range(n):
-    total_sum = 0
-    subarray = []
-    for e in range(s, n):
-        total_sum += A[e]
-        subarray.append(A[e])
-        if total_sum == 30:
-            print(subarray)
-            break
+# for s in range(n):
+#     total_sum = 0
+#     subarray = []
+#     for e in range(s, n):
+#         total_sum += A[e]
+#         subarray.append(A[e])
+#         if total_sum == 30:
+#             print(subarray)
+#             break
 
 #code for zoho
 
@@ -37,8 +37,9 @@ def find_substrings(n, string):
     
     return result
 
-n = 41
-string = "zohocorporation"
+n = int(input("Enter value : "))
+string = input("Enter word : ")
+#string = "zohocorporation"
 substrings = find_substrings(n, string)
 print(substrings)
 

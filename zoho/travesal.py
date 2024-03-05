@@ -48,7 +48,7 @@ def traverse_tree(root, choice):
 def input_tree():
     root = None
     n = int(input("Enter the number of elements: "))
-    print("Enter the elements: ")
+    print("Enter the elements")
     for i in range(n):
         key = int(input(f"Enter the key {i} : "))
         root = insert(root, key)
@@ -59,3 +59,5 @@ def main():
     root = input_tree()
     choice = int(input("Enter your choice (1 for Inorder, 2 for Preorder, 3 for Postorder): "))
     traverse_tree(root, choice)
+
+main()

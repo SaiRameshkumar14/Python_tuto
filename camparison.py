@@ -15,6 +15,19 @@ else:
     
 print("Select one option")
 print("a. megna\nb. sana")
+
+get = input("Enter : ")
+if get == "a":
+    print("You love Megna")
+elif get == "b":
+    print("You Love Sana")
+else:
+    print("Invalid input")
+
+################################################################
+
+print("Select one option")
+print("a. megna\nb. sana")
 a= "a"
 b= "b"
 get = input("Enter : ")

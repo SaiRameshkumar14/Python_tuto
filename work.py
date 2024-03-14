@@ -1,14 +1,17 @@
-num = int(input("Enter score : "))
-if num < 100:
-    if (num<35):
-        print("Poor student")
-    elif(num < 35 and num > 0):
-        print("Average Student")
-    elif(num < 70 and num >90):
-        print("Good student")
-    elif(num > 90):
-        print("Excellent student")
+# getting percentage
+
+n = int(input("Enter the percentage value : "))
+
+if n <= 100:
+    if n >= 70:
+        print(f"You are Eligible because {n}% is greater than 70%")
+        name = input("Enter your Name : ")
+        depart = input("Enter your Department : ")
+        location = input("Enter your Location : ")
+        print(f"Hello {name}, You are eligible for the following {depart} Department at {location}")
     else:
-        print("Invalid Input")
+        print(f"You are Not Eligible because {n}% is less than 70%")
 else:
-    print("Invalid Input")
+    print("Invalid percentage")
+
+

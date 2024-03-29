@@ -1,15 +1,17 @@
 # getting percentage
+try:
+    n = int(input("Enter Your Percentage : "))
 
-n = int(input("Enter the percentage value : "))
-
-if n <= 100:
-    if n >= 70:
-        print(f"You are Eligible because {n}% is greater than 70%")
-        name = input("Enter your Name : ")
-        depart = input("Enter your Department : ")
-        location = input("Enter your Location : ")
-        print(f"Hello {name}, You are eligible for the following {depart} Department at {location}")
+    if n <= 100:
+        if n > 70:
+            print(f"YOU ARE ELIGIBLE FOR SCHOLARSHIP\n--Because {n} is Greater than 70%--")
+            name = input ("Enter Your Name : ")
+            dept = input ("Enter Your Department : ")
+            location = input(("Enter Your Location : "))
+            print(f"Hi {name}, Your are from {location} and you booked {dept} for further education")
+        else:
+            print(f"You are not eligible because {n} is less than 70%")
     else:
-        print(f"You are Not Eligible because {n}% is less than 70%")
-else:
-    print("Invalid percentage")
+        print(f"Invalid Percentage : {n}")
+except ValueError:
+    print("Invalid input. Please enter a valid numeric value.")

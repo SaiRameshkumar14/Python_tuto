@@ -1,17 +1,17 @@
-# AND
+# AND = *
 
-# True True = True
-# True False = False
-# False True = False
-# False False = False
+# True * True = True
+# True * False = False
+# False * True = False
+# False * False = False
 
 
-# OR
+# OR = +
 
-# True True = True
-# True False = True
-# False True = True
-# False False = False
+# True + True = True
+# True + False = True
+# False + True = True
+# False + False = False
 
 
 # NOT 

@@ -15,3 +15,6 @@ c = int(input("Enter between range value : "))
 while a <= b:
     print(a,end=" ")
     a += c
+
+################################################################
+    

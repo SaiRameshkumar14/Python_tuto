@@ -27,3 +27,8 @@ for i in range(1,5):
     # 3
     # 4
     # print ends the before number
+
+a = int(input("Enter the valus : "))
+
+for i in range(1,a+1):
+    print(i)

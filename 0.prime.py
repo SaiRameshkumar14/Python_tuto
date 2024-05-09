@@ -1,5 +1,5 @@
 
-n = int(input())
+n = int(input("Enter Value : "))
 flag = 0
 
 for i in range(2,n):

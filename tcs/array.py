@@ -1,4 +1,24 @@
 a = []
+
+for _ in range(4):
+    b = int(input("Enter Value: "))
+    a.append(b)
+print("Original List:", a)
+
+# Iterate over the indices of the list
+for i in range(len(a)):
+    if a[i] % 3 == 0 and a[i] % 5 == 0:
+        a[i] = "ThreeFive"
+    elif a[i] % 3 == 0:
+        a[i] = "Three"
+    elif a[i] % 5 == 0:
+        a[i] = "Five"
+
+print("Modified List:", a)
+
+#######################################################################################
+
+a = []
 modified_a = []
 
 for i in range(4):

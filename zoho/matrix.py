@@ -9,8 +9,8 @@ def matrix_positions(matrix):
 
     # Sort the values and print their positions
     sorted_values = sorted(positions.keys())
-    for value in sorted_values:
-        print(positions[value][0] + 1, positions[value][1] + 1)
+    for i in sorted_values:
+        print(positions[i][0] + 1, positions[i][1] + 1)
 
 
 # Example input matrix

@@ -7,3 +7,5 @@ for i in a:
 
 
 print(list(set(b)))
+
+#[2, 3, 4]

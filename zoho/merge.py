@@ -5,7 +5,15 @@ def app(a,b):
    return b
 
 def sort(b):
-   return sorted(b)
+    n = len(b)
+    # Traverse through all elements in the list
+    for i in range(n):
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
+            # Traverse the list from 0 to n-i-1
+            # Swap if the element found is greater than the next element
+            if b[j] > b[j+1]:
+                b[j], b[j+1] = b[j+1], b[j]
 
 a = []
 b = []
@@ -20,3 +28,5 @@ for i in range(n):
 
 app(a,b)
 print(b)
+
+print("sorted b :", sort(b))

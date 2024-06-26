@@ -1,3 +1,13 @@
+class fruit:
+    def __init__(self,col,name):
+        self.color = col
+        self.name  = name
+
+apple = fruit("Red","apple")
+
+print(apple.color)
+print(apple.name)
+
 
 
 #################################################################################################

@@ -21,12 +21,12 @@ def num_to_char(n):
 
 def find_substrings(n, string):
     result = []
-    current_sum = 41
-    current_substring = 'zo',
+    current_sum = 0
+    current_substring = ""
     
-    for char in string:
-        current_sum += char_to_num(char)
-        current_substring += char
+    for i in string:
+        current_sum += char_to_num(i)
+        current_substring += i
         
         while current_sum > n:
             current_sum -= char_to_num(current_substring[0])
@@ -42,6 +42,10 @@ string = input("Enter word : ")
 #string = "zohocorporation"
 substrings = find_substrings(n, string)
 print(substrings)
+
+# Enter value : 41
+# Enter word : zohocorporation
+# ['zo', 'ohoc', 'hoco']
 
 
 

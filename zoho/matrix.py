@@ -40,7 +40,7 @@ row = int(input(f"Enter row value : "))
 
 column = int(input(f"Enter column value : "))
 
-matrixe(row, column)
+matrix(row, column)
 
 ########################################################
 

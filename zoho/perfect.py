@@ -22,7 +22,17 @@ for number in numbers:
 ################################################################
 
 def perfect(n):
-    sum_of_divisors = sum(i for i in range(1, n) if n % i == 0)
+    # Step 1: Initialize the sum of divisors to 0
+    sum_of_divisors = 0
+    
+    # Step 2: Loop through all numbers from 1 to n-1
+    for i in range(1, n):
+        # Check if i is a proper divisor of n
+        if n % i == 0:
+            # If it is, add it to the sum of divisors
+            sum_of_divisors += i
+    
+    # Step 3: Check if the sum of divisors is equal to n
     return sum_of_divisors == n
 
 try:
